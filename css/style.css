@@ -225,14 +225,33 @@ ul.dropdown li {
 
 /* TOP NAV BUTTONS */
 
-a.btn {
+a.btn{
 	display: block;
 	float: left;
-	padding: 10px 19px 6px 19px;
+	padding: 7px 14px 6px 14px;
 	position: relative;
 	font-family: georgia, helvetica;
 	font-size: 1.20em;
 	text-align: center;
+}
+
+.main_menu_btn {
+  float: right;
+  padding: 7px 14px 6px 14px;
+  position: relative;
+  font-family: georgia, helvetica;
+  font-size: 1.20em;
+  text-align: center;
+  color: #fff;
+}
+
+
+.main_menu_btn:hover{
+	padding: 7px 14px 6px 14px;
+	position: relative;
+	font-family: georgia, helvetica;
+	font-size: 1.20em;
+	background-color: #696969;
 }
 
 a.btn:hover {
@@ -248,18 +267,46 @@ a.btn:hover {
 a.btn3 {
 	display: block;
 	float: left;
-	padding: 10px 19px 6px 19px;
+	padding: 9px 12px 10px 12px;
 	position: relative;
 	font-family: georgia, helvetica;
 	font-size: 1.20em;
 	text-align: center;
+  border-radius: 3px;
 	background-color: #696969;
 }
+
+.btn3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn3:hover span {
+  padding-right: 25px;
+}
+
+.btn3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 a.btn3:hover {
 	display: block;
 	float: left;
-	padding: 10px 19px 6px 19px;
+	padding: 9px 12px 10px 12px;
 	position: relative;
 	font-family: georgia, helvetica;
 	font-size: 1.20em;
